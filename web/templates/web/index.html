@@ -1,0 +1,554 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    <script src="{% static 'web/js/script.js' %}"></script>
+    <title>ARROWWW - ПОМОГАЕМ БИЗНЕСУ РАСТИ</title>
+</head>
+<body>
+    <header class="header desktop" id="header-desktop">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">о нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#process" class="nav-link">процесс</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#contacts" class="cta-button">
+                <span class="cta-button-text">обсудить проект</span>
+                <img src="{% static 'web/images//logo_m_w.svg' %}" alt="Arrowww" class="cta-button-icon">
+            </a>
+        </div>
+    </header>
+
+    <header class="header mobile" id="header-mobile">
+        <div class="container">
+            <a href="#" class="burger-menu" id="burgerButton">
+                <svg width="30" height="20" viewBox="0 0 30 20">
+                    <rect width="30" height="2" fill="#242424" class="top"></rect>
+                    <rect y="9" width="30" height="2" fill="#242424" class="middle"></rect>
+                    <rect y="18" width="30" height="2" fill="#242424" class="bottom"></rect>
+                  </svg>
+            </a>
+            <div class="burger-menu-content" id="burgerMenu">
+                <a href="#about">о нас</a>
+                <a href="#process">процесс</a>
+                <a href="#services">услуги</a>
+                <a href="#contacts">контакты</a>
+            </div>
+            <span class="logo-mobile">
+                arrowww
+            </span>
+            <a href="#" class="cta-button-mobile">
+                <img src="{% static 'web/images/logo_m.svg' %}" alt="">
+            </a>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="location">
+                    <span class="location-text">г. хабаровск</span>
+                    <img src="{% static 'web/images//footer-logo.svg' %}" alt="Arrowww" class="location-icon">
+                </div>
+                <div class="hero-info">
+                    <div class="hero-title">
+                        <h1 class="hero-text">
+                            помогаем<br>
+                            бизнесу расти
+                        </h1>
+                        <img src="{% static 'web/images/logo_m.svg' %}" alt="Arrowww" class="hero-icon">
+                    </div>
+                    <p class="hero-subtext">
+                        создаём сайты, которые<br>
+                        <span style="color: #0095FF;">приносят прибыль</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">
+                    о нас
+                </h2>
+                <div class="about_grid">
+                    <article class="feature" style="background: linear-gradient(135deg, #00a5ff, #0095ff); color: white;">
+                        <h3 class="feature_header">
+                            повышаем<br>выручку
+                        </h3>
+                        <p class="feature_text">
+                            с заказов в интернете и оффлайн за счёт экспертного опыта и свежего взгляда
+                        </p>
+                    </article>
+                    <article class="feature" style="background: linear-gradient(135deg, #363636, #232323); color: white;">
+                        <h3 class="feature_header">
+                            гарантируем<br>результат
+                        </h3>
+                        <p class="feature_text">
+                            30 дней тех. поддержки бесплатно, до 24 месяцев по подписке
+                            <span style="text-decoration: underline;">wwwebcare+</span>
+                        </p>
+                    </article>
+                    <article class="feature" style="background-color: white;">
+                        <h3 class="feature_header">
+                            экономим<br>бюджет
+                        </h3>
+                        <p class="feature_text">
+                            используем только то, что принесёт результат и предлагаем различные варианты оплаты
+                        </p>
+                    </article>
+                    <article class="feature" style="background-color: white;">
+                        <h3 class="feature_header">
+                            выполняем<br> условия
+                        </h3>
+                        <p class="feature_text">
+                            составляем персональный прозрачный договор, грамотное тз и объявляем чёткие сроки
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <h2 class="team-title">
+                    <span style="opacity: 36%;">собрали и развиваем</span><br>
+                    молодых талантов
+                </h2>
+            </div>
+            <div class="scroll-wrapper">
+                <div class="scroll">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'web/images/vanya.png' %}" class="responsive" alt="Images">
+                        </div>
+                        <div class="card-inner">
+                            <h3 class="text text-title">ваня</h3>
+                            <p class="paragraph truncate">
+                                арт-директор
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'web/images/vlad.png' %}" class="responsive" alt="Images">
+                        </div>
+                        <div class="card-inner">
+                            <h3 class="text text-title">влад</h3>
+                            <p class="paragraph truncate">
+                                лид-бэкэнд
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'web/images/kostya.png' %}" class="responsive" alt="Images">
+                        </div>
+                        <div class="card-inner">
+                            <h3 class="text text-title">костя</h3>
+                            <p class="paragraph truncate">
+                                лид-фронтенд
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'web/images/dima.png' %}" class="responsive" alt="Images">
+                        </div>
+                        <div class="card-inner">
+                            <h3 class="text text-title">дима</h3>
+                            <p class="paragraph truncate">
+                                проджект-менеджер
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{% static 'web/images/katya.png' %}" class="responsive" alt="Images">
+                        </div>
+                        <div class="card-inner">
+                            <h3 class="text text-title">катя</h3>
+                            <p class="paragraph truncate">
+                                лид-маркетолог
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="container">
+                <div class="process-title">
+                    <h2 class="section-title">процесс</h2>
+                    <p class="process-subtext">этапы могут отличаться в зависимости от сложности проекта</p>
+                </div>
+                <div class="process-steps">
+                    <article class="step" style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
+                        <div class="step-wrapper">
+                            <div class="step-header">
+                                <h3 class="step-title" style="color: white;">
+                                    обсудим<br>
+                                    цели
+                                </h3>
+                                <p class="step-description" style="color: white;">
+                                    после того как вы заполните бриф,<br>
+                                    сразу определим цену и сроки<br>
+                                    выполнения
+                                </p>
+                            </div>
+                            <p class="step-subtitle" style="color: white;">
+                                встреча
+                            </p>
+                        </div>
+                    </article>
+                    <article class="step">
+                        <div class="step-wrapper">
+                            <div class="step-header">
+                                <h3 class="step-title">
+                                    проведём<br>
+                                    анализ
+                                </h3>
+                                <p class="step-description">
+                                    вашего бизнеса и ниши, конкурентов,<br>
+                                    определим целевую аудиторию
+                                </p>
+                            </div>
+                            <p class="step-subtitle">
+                                этап 2
+                            </p>
+                        </div>
+                    </article>
+                    <article class="step">
+                        <div class="step-wrapper">
+                            <div class="step-header">
+                                <h3 class="step-title">
+                                    определим<br>
+                                    структуру
+                                </h3>
+                                <p class="step-description">
+                                    проработав userflow под задачи<br>
+                                    вашего бизнеса, определимся<br>
+                                    с набором интегрируемых сервисов
+                                </p>
+                            </div>
+                            <p class="step-subtitle">
+                                этап 3
+                            </p>
+                        </div>
+                    </article>
+                    <article class="step" style="background: linear-gradient(135deg, #363636, #232323);">
+                        <div class="step-wrapper">
+                            <div class="step-header">
+                                <h3 class="step-title" style="color: white;">
+                                    согласуем<br>
+                                    концепцию
+                                </h3>
+                                <p class="step-description" style="color: white;">
+                                    на основе мудбордов и вашей<br>
+                                    айдентики, подберём шрифты<br>
+                                    и визуальный стиль
+                                </p>
+                            </div>
+                            <p class="step-subtitle" style="color: white;">
+                                этап 4 - предоплата 50%
+                            </p>
+                        </div>
+                    </article>
+                    <article class="step">
+                        <div class="step-wrapper">
+                            <div class="step-header">
+                                <h3 class="step-title">
+                                    напишем<br>
+                                    код с нуля
+                                </h3>
+                                <p class="step-description">
+                                    без использования конструкторов<br>
+                                    сайтов или шаблонных макетов,<br>
+                                    работа уникальна
+                                </p>
+                            </div>
+                            <p class="step-subtitle">
+                                этап 5
+                            </p>
+                        </div>
+                    </article>
+                    <article class="step">
+                        <div class="step-wrapper">
+                            <div class="step-header">
+                                <h3 class="step-title">
+                                    оптимизируем<br>
+                                    seo сайта
+                                </h3>
+                                <p class="step-description">
+                                    чтобы клиенты видели именно ваш<br>
+                                   сайт в поисковых системах яндекс<br>
+                                    и google
+                                </p>
+                            </div>
+                            <p class="step-subtitle">
+                                этап 6
+                            </p>
+                        </div>
+                    </article>
+                    <article class="step" style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
+                        <div class="step-wrapper">
+                            <div class="step-header">
+                                <h3 class="step-title" style="color: white;">
+                                    запустим<br>
+                                    и научим
+                                </h3>
+                                <p class="step-description" style="color: white;">
+                                    пользоваться cms и подключёнными<br>
+                                    сервисами, а так же бесплатно<br>
+                                    поможем в течение месяца
+                                </p>
+                            </div>
+                            <p class="step-subtitle" style="color: white;">
+                                этап 7 - постоплата 50%
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services-side">
+                    <h2 class="section-title">услуги</h2>
+                    <div class="services-info">
+                        <p class="services-item">
+                            в цены входит базовая<br>
+                            оптимизация сайта под поисковые <br>
+                            запросы, а также тех. поддержка<br>
+                            в течение 30 дней после сдачи<br>
+                            готового проекта
+                        </p>
+                        <p class="services-item">
+                            стоимость может варьироваться<br>
+                            в зависимости от сложности сайта
+                        </p>
+                        <p class="services-item">
+                            все дополнительные услуги<br>
+                            приобретаются отдельно
+                        </p>
+                    </div>
+                </div>
+                <div class="services-main">
+                    <div class="services-tab">
+                        <button class="services-button" id="sitesLink">сайты</button>
+                        <button class="services-button" id="webcareLink">wwwebcare</button>
+                        <button class="services-button" id="extraLink">дополнительно</button>
+                    </div>
+                    <div class="services-list">
+                        <div class="sites-list tab-content" id="sites">
+                            <article class="service service-white"style="background: linear-gradient(135deg, #363636, #232323);">
+                                <div class="service-header">
+                                    <h3 class="service-title">лендинг</h3>
+                                    <p class="service-price">от 20 000 Р</p>
+                                </div>
+                                <p class="service-description">
+                                    одностраничный продающий сайт<br>
+                                    с кнопкой купить или формой заявки
+                                </p>
+                            </article>
+                            <article class="service"style="background-color: white;">
+                                <div class="service-header">
+                                    <h3 class="service-title">веб-магазин</h3>
+                                    <p class="service-price" style="color: #242424;">от 100 000 Р</p>
+                                </div>
+                                <p class="service-description">
+                                    сайт с каталогом любого размера, сервисом<br>
+                                    онлайн оплаты и т. д.
+                                    </p>
+                            </article>
+                            <article class="service service-white"style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
+                                <div class="service-header">
+                                    <h3 class="service-title">бренд сайт</h3>
+                                    <p class="service-price">от 50 000 Р</p>
+                                </div>
+                                <p class="service-description">
+                                    лицо вашего бренда в интернете, формирующее<br>
+                                    имидж и общее впечатление от компании
+                                </p>
+                            </article>
+                            <article class="service">
+                                <div class="service-header">
+                                    <h3 class="service-title">быстрый</h3>
+                                    <p class="service-price" style="color: #242424;">от 10 000 Р</p>
+                                </div>
+                                <p class="service-description">
+                                    шаблонный простейший сайт за 3 дня, подойдёт<br>
+                                    для одной услуги или временного предложения
+                                </p>
+                            </article>
+                        </div>
+                        <div class="sites-list tab-content" id="webcare">
+                            <article class="service" style="background-color: white;">
+                                <div class="webcare-wrapper">
+                                    <h3 class="service-title">
+                                        start
+                                    </h3>
+                                    <p class="service-description">
+                                        ежедневный мониторинг сайта<br>
+                                        простое seo и тексты<br>
+                                        ежемесячная резервная копия<br>
+                                        консультация по cms<br>
+                                        техническая поддержка
+                                    </p>
+                                    <p class="service-price">
+                                        от 5 000 Р
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="service" style="background: linear-gradient(135deg, #363636, #232323);">
+                                <div class="webcare-wrapper service-white">
+                                    <h3 class="service-title">
+                                        wwwebcare
+                                    </h3>
+                                    <p class="service-description">
+                                        всё, что в start<br>
+                                        активное seo и до 3-х статей<br>
+                                        до 3-х a/b-тестирований элементов<br>
+                                        аналитика до 2-х метрик
+                                    </p>
+                                    <p class="service-price">
+                                        от 20 000 Р
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="service"style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
+                                <div class="webcare-wrapper service-white">
+                                    <h3 class="service-title">
+                                        wwwebcare+
+                                    </h3>
+                                    <p class="service-description">
+                                        всё, что в wwwebcare<br>
+                                        персональная маркетинг-стратегия<br>
+                                        глубокая аналитика метрик<br>
+                                        регулярные гипотезы и тесты<br>
+                                        интеграция новых функций
+                                    </p>
+                                    <p class="service-price">
+                                        от 80 000 Р
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="sites-list tab-content" id="extra">
+                            <article class="service service-white"style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
+                                <div class="service-header">
+                                    <h3 class="service-title">редизайн</h3>
+                                    <p class="service-price">от 40 000 Р</p>
+                                </div>
+                                <p class="service-description">
+                                    проведём аудит вашего сайта, исследование ниши и ца,<br>
+                                    и предложим решение для повышения конверсии
+                                </p>
+                            </article>
+                            <article class="service"style="background-color: white;">
+                                <div class="service-header">
+                                    <h3 class="service-title">seo+</h3>
+                                    <p class="service-price" style="color: #242424;">от 20 000 Р</p>
+                                </div>
+                                <p class="service-description">
+                                    проведём аудит seo вашего сайта и качественно<br>
+                                    поднимем его место в поисковых системах
+                                </p>
+                            </article>
+                            <article class="service service-white"style="background: linear-gradient(135deg, #363636, #232323);">
+                                <div class="service-header">
+                                    <h3 class="service-title">реклама</h3>
+                                    <p class="service-price">от 20 000 Р</p>
+                                </div>
+                                <p class="service-description">
+                                    разработаем, запустим и будем вести баннерную<br>
+                                    рекламу в в яндексе, vk и пр.
+                                    </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts-side">
+                    <h2 class="section-title">оставьте заявку <br> или свяжитесь сами</h2>
+                    <div class="contacts-info">
+                        <p class="contacts-item">tg @arrowwwsales</p>
+                        <p class="contacts-item">sales@arrowww.ru</p>
+                        <p class="contacts-item">8 999 082 08 11</p>
+                    </div>
+                </div>
+                <div class="contacts-main">
+                    <form method="post" class="contacts-form">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="имя или название компании" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="contact" placeholder="какую задачу хотите решить" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="message" placeholder="telegram / whatsapp / email" required>
+                        </div>
+                        <div class="submit">
+                            <div class="form-button">
+                                <button type="submit">свяжитесь со мной</button>
+                                <img src="{% static 'web/images/logo_m_w_l.svg' %}" alt="Arrowww" class = "button-icon">
+                            </div>
+                            <p class="form-policy">
+                                <span class="form-policy-text">
+                                    нажимая на кнопку я согласен<br>
+                                    с <a href="#" class="form-policy-link" style="color: #242424;">политикой конфиденциальности</a>
+                                </span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="location">
+                <span class="location-text">г. хабаровск</span>
+                <img src="{% static 'web/images/footer-logo.svg'%}" alt="Arrowww" class="location-icon">
+            </div>
+            <div class="footer-info">
+                <img src="{% static 'web/images/logo.svg' %}" alt="" class="footer-logo">
+                <span class="footer-text">
+                    ип рудчук и.а.<br>
+                    все права сохранены
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
