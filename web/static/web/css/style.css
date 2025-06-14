@@ -267,6 +267,7 @@ main {
 
 .responsive {
   width: 32vw;
+border-radius: 4vw;
 }
 
 .card-inner {
