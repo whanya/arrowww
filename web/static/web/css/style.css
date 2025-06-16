@@ -129,7 +129,7 @@ main {
   margin-bottom:0.55vw;
 }
 
-.nav-link, .cta-button-text, .location-text, .hero-subtext, .step-subtitle, .process-subtext, .services-info, .footer-text {
+.nav-link, .cta-button-text, .location-text, .hero-subtext, .step-subtitle, .process-subtext, .services-info {
   font-size: 1.6vw;
   font-weight: 450;
   line-height: 150%;
@@ -248,7 +248,7 @@ main {
 	flex-wrap: nowrap;
 	align-items: center;
 	width: 100%;
-	height: 35vw;
+	height: auto;
 	padding: 0 4.5vw;
 	margin: 3vw 0;
 	cursor: default;
@@ -260,14 +260,13 @@ main {
 
 .card {
     display: flex;
-    align-items:center;
+    align-items: flex-end;
     user-select: none;
     gap: 3vw;
 }
 
 .responsive {
   width: 32vw;
-  border-radius: 4vw;
 }
 
 .card-inner {
@@ -293,7 +292,7 @@ main {
   line-height: 100%;
   letter-spacing: -0.06vw;
   margin: 0;
-  margin-top: 2vw;
+  margin-top: 2vw !important;
   margin-bottom: 1vw;
 }
 
@@ -362,14 +361,13 @@ main {
 
 .tab-content {
   display: none;
-  gap: 0.8vw;
 }
 
 .services-side{
 width:42vw;
 }
 
-.section-title, .services-button {
+.section-title {
   font-size: 2.5vw;
   font-weight: 450;
   letter-spacing: -0.06vw;
@@ -409,6 +407,11 @@ width:42vw;
 .services-button {
   border: none;
   cursor: pointer;
+  font-size: 2.5vw;
+  font-weight: 450;
+  letter-spacing: -0.06vw;
+  line-height: 150%;
+  color: #242424;
   background-color: #ffffff00
 }
 
@@ -419,8 +422,8 @@ width:42vw;
 
 .services-tab {
   display:flex;
-  padding: 0 3vw;
-  justify-content:space-between;
+  padding-left: 3vw;
+  gap: 6vw;
 }
 
 .services-list{
@@ -667,16 +670,19 @@ input[type="text"]
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 3vw 3vw;
-  padding-top: 8vw;
+  padding: 60px 60px;
+  padding-top: 120px;
 }
 
 .footer-logo {
-  width: 30vw;
-  height: 100%;
+  width: 560px;
+  height: 156px;
 }
 
 .footer-text {
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: -1.5px;
   text-align: right;
 }
 
