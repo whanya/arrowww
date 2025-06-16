@@ -20,6 +20,7 @@ body {
   margin: 0 0;
   background-color: #f2f2f2;
   overflow-x: hidden;
+  
 }
 
 div, p, input, button, form, span, a, ul, li {
@@ -129,7 +130,7 @@ main {
   margin-bottom:0.55vw;
 }
 
-.nav-link, .cta-button-text, .location-text, .hero-subtext, .step-subtitle, .process-subtext, .services-info {
+.nav-link, .cta-button-text, .location-text, .hero-subtext, .step-subtitle, .process-subtext, .services-info, .footer-text, .case-desc, .paragraph{
   font-size: 1.6vw;
   font-weight: 450;
   line-height: 150%;
@@ -195,6 +196,38 @@ main {
   margin: 0.6vw 0;
 }
 
+.cakeboy{
+  display:flex;
+  flex-direction: column;
+  gap:0.8vw;
+}
+
+.case-image {
+  width: 60vw;
+  height: 35vw;
+  border-radius: 4vw;
+  object-fit: cover;
+}
+
+.case-container{
+  display:flex;
+  flex-direction: row;
+  gap:3vw;
+}
+
+.case-desc{
+  opacity:36%;
+}
+
+.case-name-container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap:nowrap;
+  justify-content: center;
+}
+
+
+
 /*.about-title {
   font-size: 2.5vw;
   font-weight: 500;
@@ -248,7 +281,7 @@ main {
 	flex-wrap: nowrap;
 	align-items: center;
 	width: 100%;
-	height: auto;
+	height: 35vw;
 	padding: 0 4.5vw;
 	margin: 3vw 0;
 	cursor: default;
@@ -258,15 +291,22 @@ main {
 	scrollbar-width: none;
 }
 
+.truncate {
+  width: 12vw;
+  margin: 0 0;
+  opacity:36%;
+}
+
 .card {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     user-select: none;
     gap: 3vw;
 }
 
 .responsive {
   width: 32vw;
+  border-radius: 4vw;
 }
 
 .card-inner {
@@ -275,26 +315,9 @@ main {
     padding-right: 42vw;
 }
 
-.card-inner h3 {
-    color: #242424;
-    font-size: 2.4vw;
-    font-weight: 450;
-    line-height: 100%;
-    letter-spacing: -0.06vw;
-    width: 12vw !important;
-}
 
-.card-inner p {
-  color: #242424;
-  opacity: 36%;
-  font-size: 1.6vw;
-  font-weight: 450;
-  line-height: 100%;
-  letter-spacing: -0.06vw;
-  margin: 0;
-  margin-top: 2vw !important;
-  margin-bottom: 1vw;
-}
+
+
 
 .process-title {
   display: flex;
@@ -361,13 +384,14 @@ main {
 
 .tab-content {
   display: none;
+  gap: 0.8vw;
 }
 
 .services-side{
 width:42vw;
 }
 
-.section-title {
+.section-title, .services-button, .case-title, .text-title{
   font-size: 2.5vw;
   font-weight: 450;
   letter-spacing: -0.06vw;
@@ -407,11 +431,6 @@ width:42vw;
 .services-button {
   border: none;
   cursor: pointer;
-  font-size: 2.5vw;
-  font-weight: 450;
-  letter-spacing: -0.06vw;
-  line-height: 150%;
-  color: #242424;
   background-color: #ffffff00
 }
 
@@ -422,8 +441,8 @@ width:42vw;
 
 .services-tab {
   display:flex;
-  padding-left: 3vw;
-  gap: 6vw;
+  padding: 0 3vw;
+  justify-content:space-between;
 }
 
 .services-list{
@@ -670,19 +689,16 @@ input[type="text"]
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 60px 60px;
-  padding-top: 120px;
+  padding: 3vw 3vw;
+  padding-top: 8vw;
 }
 
 .footer-logo {
-  width: 560px;
-  height: 156px;
+  width: 30vw;
+  height: 100%;
 }
 
 .footer-text {
-  font-size: 30px;
-  line-height: 150%;
-  letter-spacing: -1.5px;
   text-align: right;
 }
 
