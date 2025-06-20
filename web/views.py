@@ -14,3 +14,6 @@ def index(request):
 
 def success(request):
     return render(request, 'web/success.html')
+
+def privacy(request):
+    return render(request, 'web/privacy.html')
