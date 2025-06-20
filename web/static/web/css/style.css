@@ -571,7 +571,7 @@ width:42vw;
 .contacts-form{
   display:flex;
   flex-direction:column;
-  gap:0.6vw;
+  gap:0.8vw;
 }
 
 .form-group {
