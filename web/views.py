@@ -17,3 +17,12 @@ def success(request):
 
 def privacy(request):
     return render(request, 'web/privacy.html')
+
+def case0(request):
+    return render(request, 'web/case0.html')
+
+def case1(request):
+    return render(request, 'web/case1.html')
+
+def case2(request):
+    return render(request, 'web/case2.html')
