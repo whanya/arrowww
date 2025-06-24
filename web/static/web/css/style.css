@@ -5,11 +5,18 @@
   }
 }
 
+:root{
+  --color-bg-main: #f2f2f2;
+  --color-brand-blue: #0095ff;
+  --color-brand-dark: #242424;
+  --color-white: #ffffff;
+}
+
 html {
   font-size: inherit;
   line-height: normal;
-  text-size-adjust: none !important;
-  -webkit-font-smoothing: subpixel-antialiased !important;
+  text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 
@@ -18,7 +25,7 @@ body {
   font-family: "Onest", serif;
   font-style: normal;
   margin: 0 0;
-  background-color: #f2f2f2;
+  background-color: var(--color-bg-main);
   overflow-x: hidden;
   
 }
@@ -75,7 +82,7 @@ main {
 }
 
 .logo, .nav, .cta-button {
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius:4vw;
 }
 
@@ -108,7 +115,7 @@ main {
 }
 
 .nav-link {
-  color: #242424;
+  color: var(--color-brand-dark);
   font-size: 1.2vw; /* Добавлено */
   padding: 0; /* Добавлено */
   transition: opacity 0.3s ease-in-out;
@@ -116,8 +123,8 @@ main {
 
 .cta-button {
   display:flex;
-  background-color: #242424;
-  color: white;
+  background-color: var(--color-brand-dark);
+  color: var(--color-white);
   padding: 1.4vw 3vw;
   text-decoration: none;
   gap: 0.6vw;
@@ -146,7 +153,7 @@ main {
 }
 
 .hero .container {
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 4vw;
   margin-top: 4vw;
 }
@@ -216,6 +223,7 @@ main {
 }
 
 .case-desc{
+  color: var(--color-brand-dark);  
   opacity:36%;
 }
 
@@ -270,7 +278,7 @@ main {
 
 .team-title {
   padding: 0 3vw;
-  color: #242424;
+  color: var(--color-brand-dark);
 }
 
 
@@ -841,4 +849,18 @@ input[type="text"]
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+
+.case-img{
+  width:96vw;
+  border-radius:1.4vw;
+}
+
+.case-images{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding: 0 3vw;
+  gap:0.8vw;
 }
