@@ -1,11 +1,28 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/adapt.css' %}">
+    <title>кейс / премиум клининг</title>
 </head>
 <body>
-    
+    <header class="header desktop" id="header-desktop">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon">
+            </a>
+            <p class="hero-subtext">
+                кейс / премиум клининг / лендинг
+            </p>
+            <a href="#contacts" class="cta-button">
+                <span class="cta-button-text">обсудить проект</span>
+                <img src="{% static 'web/images//logo_m_w.svg' %}" alt="Arrowww" class="cta-button-icon">
+            </a>
+        </div>
+    </header>
 </body>
 </html>
