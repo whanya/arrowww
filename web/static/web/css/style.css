@@ -5,6 +5,7 @@
   }
 }
 
+
 :root{
   --color-bg-main: #f2f2f2;
   --color-brand-blue: #0095ff;
@@ -18,8 +19,6 @@ html {
   text-size-adjust: none;
   -webkit-font-smoothing: subpixel-antialiased;
 }
-
-
 
 body {
   font-family: "Onest", serif;
@@ -38,7 +37,52 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+.case-desc, .paragraph, .text-main{
+  font-size: 1.6vw;
+  font-weight: 450;
+  line-height: 150%;
+  letter-spacing: -0.04vw;
+  color: var(--color-brand-dark);
+  margin: 0 0;
+  text-decoration: none;
+}
 
+.nav .text-main:hover,
+.step .text-main,
+.location .text-main,
+.cta-button .text-main:hover,
+.process .text-main,
+.services-side .text-main,
+.case-name-container .text-main {
+  opacity: 36%;
+}
+
+.services-side .text-main {
+  padding-left: 3vw;
+  padding-top: 6vw;
+}
+
+.process-title .text-main {
+  text-align:end;
+}
+
+.nav .text-main,
+.cta-button .text-main {
+  transition: opacity 0.3s;
+}
+
+.cta-button .text-main {
+  color: var(--color-white);
+}
+
+.hero-info .text-main {
+  margin: 0.6vw 0;
+}
+
+.footer-info .text-main,
+.hero-info .text-main {
+  text-align: right;
+}
 
 section {
   padding-bottom: 14vw;
@@ -86,9 +130,11 @@ main {
   border-radius:4vw;
 }
 
-.nav-link, .button {
+.button {
   text-decoration: none;
 }
+
+
 
 .nav {
   flex-grow: 1;
@@ -114,12 +160,7 @@ main {
   align-items: center;
 }
 
-.nav-link {
-  color: var(--color-brand-dark);
-  font-size: 1.2vw; /* Добавлено */
-  padding: 0; /* Добавлено */
-  transition: opacity 0.3s ease-in-out;
-}
+
 
 .cta-button {
   display:flex;
@@ -137,16 +178,9 @@ main {
   margin-bottom:0.55vw;
 }
 
-.nav-link, .cta-button-text, .location-text, .hero-subtext, .step-subtitle, .process-subtext, .services-info, .footer-text, .case-desc, .paragraph{
-  font-size: 1.6vw;
-  font-weight: 450;
-  line-height: 150%;
-  letter-spacing: -0.04vw;
-}
 
-.nav-link:hover {
-  opacity: 36%;
-}
+
+
 
 .header.mobile {
   display: none;
@@ -164,9 +198,7 @@ main {
   padding: 30px 30px;
 }
 
-.location-text {
-  opacity: 36%;
-}
+
 
 .location-icon{
   width: 20vw;
@@ -198,10 +230,7 @@ main {
   margin-bottom: 0.8vw;
 }
 
-.hero-subtext {
-  text-align: right;
-  margin: 0.6vw 0;
-}
+
 
 .cakeboy{
   display:flex;
@@ -222,10 +251,7 @@ main {
   gap:3vw;
 }
 
-.case-desc{
-  color: var(--color-brand-dark);  
-  opacity:36%;
-}
+
 
 .case-name-container{
   display:flex;
@@ -336,11 +362,6 @@ main {
 
 
 
-.process-subtext {
-  opacity: 36%;
-  margin:0;
-  text-align:end;
-}
 
 .process-steps {
   display:flex;
@@ -374,11 +395,7 @@ main {
   width: 50%;
 }
 
-.step-subtitle {
 
-  opacity: 36%;
-  margin: 1vw 0;
-}
 
 .step-description {
   font-size: 2.5vw;
@@ -412,13 +429,7 @@ width:42vw;
   padding: 0 3vw;
 }
 
-.services-info {
 
-  padding-left: 3vw;
-  opacity: 36%;
-  color: #242424;
-  padding-top: 6vw;
-}
 
 .services-main {
   display:flex;
@@ -706,9 +717,7 @@ input[type="text"]
   height: 100%;
 }
 
-.footer-text {
-  text-align: right;
-}
+
 
 
 /* Burger-menu */

@@ -1,0 +1,405 @@
+@media (max-width: 1440px) {
+  .feature {
+    width: 100%;
+  }
+
+  .about_grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services-button {
+    font-size: 32px;
+  }
+
+  .form-button {
+    display: inherit;
+  }
+  }
+  
+@media (max-width: 1024px) {
+  .nav-list {
+    gap: 40px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .location img {
+    width: 200px;
+  }
+
+  .nav-link, .cta-button-text {
+    font-size: 20px;
+  }
+
+  .contacts .container {
+    flex-direction: column;
+  }
+
+  }
+  
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header.desktop {
+    display: none;
+  }
+  .header.mobile {
+    display: flex;
+  }
+
+  .feature_header {
+    font-size: clamp(24px, 6vw, 36px) !important;
+  }
+
+  .about_grid {
+    grid-template-columns: 1fr !important;
+  }
+  .form-group input {
+    height: 80px;
+    font-size: 24px;
+  }
+
+  
+  .card {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  .card-image {
+    padding-right: 0;
+    width: 120px;
+    flex-shrink: 0;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .card-inner {
+    padding: 0 0 0 20px;
+    width: auto;
+  }
+
+  .card-inner h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .card-inner p {
+    font-size: 16px;
+    opacity: 0.6;
+    margin-top: 8px !important;
+  }
+}
+  
+@media (max-width: 576px) {
+  section {
+    padding-bottom: 120px;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .header {
+    display: none;
+  }
+  .header.mobile {
+    padding: 15px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .location {
+    justify-content: flex-end;
+  }
+
+  .location-text {
+    display: none;
+  }
+
+  .location-icon {
+    width: 208px;
+  }
+
+  .hero-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 5%;
+  }
+
+  .hero-text {
+    
+  font-size: 42px;
+  line-height: 1.2;
+  }
+
+  .hero-icon {
+    height: 33px;
+    margin-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtext {
+    margin-top: 60px;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    padding-left: 0;
+  }
+
+  .feature {
+    padding: 0 5%;
+    border-radius: 30px;
+  }
+
+  .feature_header {
+    font-size: 48px;
+    padding-top: 36px;
+  }
+
+  .feature_text {
+    font-size: 24px;
+    padding-bottom: 36px;
+    letter-spacing: -1px;
+  }
+
+  .team-title {
+    font-size: 60px;
+    padding: 0 5%;
+  }
+
+
+  .process-title {
+    padding: 0;
+  }
+
+  .process-subtext {
+    display: none;
+  }
+
+  .step-wrapper {
+    flex-direction: column-reverse;
+    padding: 36px 24px;
+  }
+
+  .step {
+    border-radius: 30px;
+  }
+
+  .step-header {
+    flex-direction: column;
+  }
+
+  .step-title {
+    font-size: 48px;
+    padding-bottom: 48px;
+  }
+
+  .step-subtitle {
+    margin: 0;
+  }
+
+  .step-description {
+    text-align: left;
+    font-size: 24px;
+    width: 75%;
+  }
+
+  .services-side {
+    display: none;
+  }
+
+  .services-tab {
+    padding-left: 0;
+  }
+
+  .services-button {
+    font-size: 24px;
+    padding-right: 36px;
+  }
+
+  .service-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .service-title {
+    font-size: 48px;
+  }
+
+  .service-price, .service-description {
+    font-size: 24px;
+  }
+
+  .service-description {
+    padding-bottom: 24px;
+    margin-top: 24px;
+  }
+
+  .contacts .container {
+    flex-direction: column;
+  }
+
+  .contacts-info {
+    padding-left: 5%;
+    padding-top: 0;
+  }
+
+  .contacts-item {
+    font-size: 36px;
+  }
+
+  .contacts-main {
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .form-group input {
+    height: 70px;
+    font-size: 24px;
+  }
+
+  input::placeholder {
+    font-size: 24px;
+  }
+
+  .submit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-button {
+    padding: 24px 30px;
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .submit button {
+    font-size: 24px;
+  }
+
+  .submit img {
+    display: none;
+  }
+
+  .form-policy {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  footer {
+    display: none;
+  }
+  
+   /* Исправление для табов услуг */
+   /* Исправление закруглений для всех сервисных блоков */
+   .service {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 30px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    margin-right: 0 !important;
+    padding-right: 24px !important; /*Соответствует вашему дизайну */
+  }
+
+  /* Фикс для правого закругления */
+  .service > * {
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+  }
+
+  .sites-list .service {
+    border-radius: 30px !important;
+  }
+  
+
+   .services-tab {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .services-button {
+    font-size: 20px !important;
+    padding-right: 20px !important;
+    flex-shrink: 0;
+  }
+
+  .services-list {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .tab-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .service {
+    padding: 24px !important;
+    margin-bottom: 12px;
+    width: 100% !important;
+  }
+
+  .service-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    border-top-right-radius: 30px !important;
+  }
+
+  .service-title {
+    font-size: 32px !important;
+    margin-bottom: 15px;
+  }
+
+  .service-price {
+    font-size: 20px !important;
+    margin-bottom: 15px;
+  }
+
+  .service-description {
+    font-size: 24px !important;
+    padding-bottom: 0 !important;
+    margin-top: 15px !important;
+    
+    border-bottom-right-radius: 30px !important;
+  }
+
+  /*Специфичные стили для вкладки wwwebcare*/
+  .webcare-wrapper {
+    width: calc(100% + 24px) !important;
+    margin-right: -24px !important;
+    padding-right: 24px !important;
+  }
+
+  .webcare-wrapper .service-description {
+    padding: 20px 0 !important;
+    font-size: 24px !important;
+  }
+
+  .webcare-wrapper .service-price {
+    font-size: 20px !important;
+  }
+  }
