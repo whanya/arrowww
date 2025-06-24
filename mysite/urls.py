@@ -23,9 +23,9 @@ urlpatterns = [
     path('', include('web.urls')),
     path('success/', views.success, name='success'),
     path('privacy/', views.privacy, name='privacy'),
-    path('case0/', views.case0, name='case0')
-    path('case1/', views.case1, name='case1')
-    path('case2/', views.case2, name='case2')
+    path('case0/', views.case0, name='case0'),
+    path('case1/', views.case1, name='case1'),
+    path('case2/', views.case2, name='case2'),
 ]
 
 
