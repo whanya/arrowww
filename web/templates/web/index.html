@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/adapt.css' %}">
     <script src="{% static 'web/js/script.js' %}"></script>
-    <title>ARROWWW - ПОМОГАЕМ БИЗНЕСУ РАСТИ</title>
+    <title>arrowww / делаем сайты</title>
+    <link rel="icon" href="{% static 'web/images/favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
     <header class="header desktop" id="header-desktop">
@@ -87,27 +89,27 @@
         
         <section class="cases" id="cases">
             <div class="container cakeboy">
-                <div class="case-container">
+                <a href="{% url 'case0' %}" target="_blank" class="case-container" style="text-decoration-color: #242424;" >
                     <img src="{% static 'web/images/1.png' %}" alt="case1" class="case-image">
                     <div class="case-name-container">
                         <h3 class="case-title">премиум клининг</h3>
-                        <h3 class="case-desc">лендинг</h3>
+                        <h3 class="case-desc" style="color:#242424;">лендинг</h3>
                     </div>
-                </div>
-                <div class="case-container">
+                </a>
+                <a href="{% url 'case1' %}" target="_blank" class="case-container" style="text-decoration-color: #242424;">
                     <img src="{% static 'web/images/2.png' %}" alt="case1" class="case-image">
                     <div class="case-name-container">
                         <h3 class="case-title">частная школа</h3>
-                        <h3 class="case-desc">приложение на iPad</h3>
+                        <h3 class="case-desc" style="color:#242424;">приложение на iPad</h3>
                     </div>
-                </div>
-                <div class="case-container">
+                </a>
+                <a href="{% url 'case2' %}" target="_blank" class="case-container" style="text-decoration-color: #242424;">
                     <img src="{% static 'web/images/3.png' %}" alt="case1" class="case-image">
                     <div class="case-name-container">
                         <h3 class="case-title">студия бровей</h3>
-                        <h3 class="case-desc">веб-сервис</h3>
+                        <h3 class="case-desc" style="color:#242424;">веб-сервис</h3>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
