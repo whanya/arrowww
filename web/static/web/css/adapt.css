@@ -101,6 +101,13 @@
   
 @media (max-width: 576px) {
 
+  .header.desktop {
+    display: none;
+  }
+  .header.mobile {
+    display: flex;
+  }
+
   .main {
     margin-top:20vw;
   }
