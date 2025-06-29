@@ -242,7 +242,7 @@
 
   .step-wrapper .text-main {
     text-align: left;
-    font-size: 4vw;
+    font-size: 5vw;
     letter-spacing: -0.1vw;
     padding-top: 4vw;
   }
@@ -315,9 +315,9 @@
   }
 
   .feature_text {
-    font-size: 5.5vw;
+    font-size: 6vw;
     padding-bottom: 8vw;
-    letter-spacing: -1px;
+    letter-spacing: -0.1vw;
     margin:0;
   }
 
@@ -364,9 +364,9 @@
   }
 
   .step-description {
-    font-size: 5vw;
+    font-size: 6vw;
     padding-bottom: 0;
-    letter-spacing: -1px;
+    letter-spacing: -0.1vw;
     margin: 0;
     width: auto;
   }
@@ -535,9 +535,9 @@
   }
 
   .service-description {
-    font-size: 5vw;
+    font-size: 6vw;
     padding-bottom: 0;
-    letter-spacing: -1px;
+    letter-spacing: -0.1vw;
     margin: 0;
     width: auto;
   }
@@ -550,8 +550,8 @@
   }
 
   .webcare-wrapper .service-description {
-    padding: 20px 0 !important;
-    font-size: 24px !important;
+
+    font-size: 5vw !important;
   }
 
   .webcare-wrapper .service-price {
