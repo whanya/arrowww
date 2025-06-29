@@ -379,11 +379,6 @@
     padding-left: 0;
   }
 
-  .services-button {
-    font-size: 24px;
-    padding-right: 36px;
-  }
-
   .service-header {
     align-items: flex-start;
     flex-direction: column;
@@ -463,11 +458,14 @@
    .service {
     width: 100% !important;
     max-width: 100% !important;
-    border-radius: 30px !important;
+    border-radius: 8vw !important;
+    display:flex;
+    flex-direction: column;
     overflow: hidden !important;
     box-sizing: border-box !important;
     margin-right: 0 !important;
-    padding-right: 24px !important; /*Соответствует вашему дизайну */
+    padding: 8vw 4vw 12vw 4vw;
+    gap: 4vw;
   }
 
   /* Фикс для правого закругления */
@@ -477,7 +475,7 @@
   }
 
   .sites-list .service {
-    border-radius: 30px !important;
+    border-radius: 8vw !important;
   }
   
 
@@ -485,13 +483,19 @@
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    width:100%;
+    padding-right: 4vw;
+    padding-left:4vw;
+    padding-bottom: 2vw;
   }
 
   .services-button {
-    font-size: 20px !important;
-    padding-right: 20px !important;
+    font-size: 5vw;
+    padding: 0;
+    letter-spacing: -1px;
+    margin: 0;
+    width: auto;
     flex-shrink: 0;
   }
 
@@ -507,9 +511,7 @@
   }
 
   .service {
-    padding: 24px !important;
-    margin-bottom: 12px;
-    width: 100% !important;
+    width: 100%;
   }
 
   .service-header {
@@ -519,21 +521,25 @@
   }
 
   .service-title {
-    font-size: 32px !important;
-    margin-bottom: 15px;
+    font-size: 12vw;
+    font-weight: 450;
+    width: auto;
+    line-height: 1;
   }
 
   .service-price {
-    font-size: 20px !important;
-    margin-bottom: 15px;
+    text-align: left;
+    font-size: 4vw;
+    letter-spacing: -0.1vw;
+    padding-top: 2vw;
   }
 
   .service-description {
-    font-size: 24px !important;
-    padding-bottom: 0 !important;
-    margin-top: 15px !important;
-    
-    border-bottom-right-radius: 30px !important;
+    font-size: 5vw;
+    padding-bottom: 0;
+    letter-spacing: -1px;
+    margin: 0;
+    width: auto;
   }
 
   /*Специфичные стили для вкладки wwwebcare*/
