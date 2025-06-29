@@ -237,12 +237,31 @@
     margin-top: 10vw;
     text-align: left;
     font-size: 4vw;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.1vw;
+  }
+
+  .step-wrapper .text-main {
+    text-align: left;
+    font-size: 4vw;
+    letter-spacing: -0.1vw;
+    padding-top: 4vw;
   }
 
   .section-title {
-    font-size: 24px;
-    padding-left: 0;
+    font-size: 5.5vw;
+    padding-left: 3vw;
+    letter-spacing: -0.2vw;
+    margin: 0;
+  }
+
+  .process .container {
+    display:flex;
+    flex-direction: column;
+    gap:3vw;
+  }
+
+  .process-title .text-main{
+    display:none;
   }
 
   .feature {
@@ -279,7 +298,8 @@
   }
 
   .card-inner{
-    padding-right: 0;;
+    padding-right: 0;
+    padding-left: 3vw;
   }
 
   .card-inner .text-title {
@@ -291,6 +311,7 @@
     font-weight: 450;
     padding-top: 4vw;
     margin-bottom:0;
+    line-height: 1;
   }
 
   .feature_text {
@@ -318,7 +339,7 @@
 
   .step-wrapper {
     flex-direction: column-reverse;
-    padding: 36px 24px;
+    padding: 4vw;
   }
 
   .step {
@@ -327,11 +348,15 @@
 
   .step-header {
     flex-direction: column;
+    gap: 10vw;
+    padding-bottom:8vw;
   }
 
   .step-title {
-    font-size: 48px;
-    padding-bottom: 48px;
+    font-size: 12vw;
+    font-weight: 450;
+    width: auto;
+    line-height: 1;
   }
 
   .step-subtitle {
@@ -339,9 +364,11 @@
   }
 
   .step-description {
-    text-align: left;
-    font-size: 24px;
-    width: 75%;
+    font-size: 5vw;
+    padding-bottom: 0;
+    letter-spacing: -1px;
+    margin: 0;
+    width: auto;
   }
 
   .services-side {
