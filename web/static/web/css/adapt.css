@@ -403,12 +403,12 @@
   }
 
   .contacts-info {
-    padding-left: 5%;
     padding-top: 0;
   }
 
   .contacts-item {
-    font-size: 36px;
+    font-size: 8vw;
+    line-height: 1.4;
   }
 
   .contacts-main {
@@ -417,8 +417,14 @@
   }
 
   .form-group input {
-    height: 70px;
-    font-size: 24px;
+    height: 18vw;
+    width: 100%;
+    border-radius: 8vw;
+    font-size: 8vw;
+  }
+
+  input[type="text"]{
+    padding-left:6vw;
   }
 
   input::placeholder {
@@ -434,6 +440,7 @@
     padding: 24px 30px;
     margin: 0;
     margin-top: 12px;
+    border-radius: 12vw;
   }
 
   .submit button {
@@ -465,7 +472,7 @@
     box-sizing: border-box !important;
     margin-right: 0 !important;
     padding: 8vw 4vw 12vw 4vw;
-    gap: 4vw;
+    gap: 6vw;
   }
 
   /* Фикс для правого закругления */
@@ -491,9 +498,9 @@
   }
 
   .services-button {
-    font-size: 5vw;
+    font-size: 6vw;
     padding: 0;
-    letter-spacing: -1px;
+    letter-spacing: -0.1vw;
     margin: 0;
     width: auto;
     flex-shrink: 0;
@@ -515,9 +522,10 @@
   }
 
   .service-header {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    border-top-right-radius: 30px !important;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top-right-radius: 30px;
+    gap:2vw;
   }
 
   .service-title {
@@ -529,7 +537,7 @@
 
   .service-price {
     text-align: left;
-    font-size: 4vw;
+    font-size: 6vw;
     letter-spacing: -0.1vw;
     padding-top: 2vw;
   }
@@ -551,10 +559,17 @@
 
   .webcare-wrapper .service-description {
 
-    font-size: 5vw !important;
+    font-size: 6vw;
+    letter-spacing: -0.2vw;
   }
 
   .webcare-wrapper .service-price {
-    font-size: 20px !important;
+    font-size: 6vw;
+    letter-spacing: -0.2vw;
   }
+
+  .form-group{
+    justify-content: flex-start;
+  }
+  
   }
