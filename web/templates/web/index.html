@@ -5,11 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="64789118f047a68b" />
     <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'web/css/adapt.css' %}">
     <script src="{% static 'web/js/script.js' %}"></script>
-    <title>arrowww / делаем сайты</title>
-    <link rel="icon" href="{% static 'web/images/favicon.ico' %}" type="image/x-icon">
+    <title>ARROWWW - ПОМОГАЕМ БИЗНЕСУ РАСТИ</title>
 </head>
 <body>
     <header class="header desktop" id="header-desktop">
@@ -20,21 +19,21 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#about" class="text-main">мы</a>
+                        <a href="#about" class="nav-link">о нас</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#process" class="text-main">процесс</a>
+                        <a href="#process" class="nav-link">процесс</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="text-main">услуги</a>
+                        <a href="#services" class="nav-link">услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contacts" class="text-main">контакты</a>
+                        <a href="#contacts" class="nav-link">контакты</a>
                     </li>
                 </ul>
             </nav>
             <a href="#contacts" class="cta-button">
-                <span class="text-main">обсудить проект</span>
+                <span class="cta-button-text">обсудить проект</span>
                 <img src="{% static 'web/images//logo_m_w.svg' %}" alt="Arrowww" class="cta-button-icon">
             </a>
         </div>
@@ -68,8 +67,8 @@
         <section class="hero" id="hero">
             <div class="container">
                 <div class="location">
-                    <span class="text-main">г. хабаровск</span>
-                    <img src="{% static 'web/images/footer-logo.svg' %}" alt="Arrowww" class="location-icon">
+                    <span class="location-text">г. хабаровск</span>
+                    <img src="{% static 'web/images//footer-logo.svg' %}" alt="Arrowww" class="location-icon">
                 </div>
                 <div class="hero-info">
                     <div class="hero-title">
@@ -79,7 +78,7 @@
                         </h1>
                         <img src="{% static 'web/images/logo_m.svg' %}" alt="Arrowww" class="hero-icon">
                     </div>
-                    <p class="text-main">
+                    <p class="hero-subtext">
                         создаём сайты, которые<br>
                         <span style="color: #0095FF;">приносят прибыль</span>
                     </p>
@@ -87,44 +86,18 @@
             </div>
         </section>
         
-        <section class="cases" id="cases">
-            <div class="container cakeboy">
-                <a href="{% url 'case0' %}" target="_blank" class="case-container" style="text-decoration-color: #242424;" >
-                    <img src="{% static 'web/images/1.png' %}" alt="case1" class="case-image">
-                    <div class="case-name-container">
-                        <h3 class="case-title">премиум клининг</h3>
-                        <h3 class="text-main" style="color:#242424;">лендинг</h3>
-                    </div>
-                </a>
-                <a href="{% url 'case1' %}" target="_blank" class="case-container" style="text-decoration-color: #242424;">
-                    <img src="{% static 'web/images/2.png' %}" alt="case1" class="case-image">
-                    <div class="case-name-container">
-                        <h3 class="case-title">частная школа</h3>
-                        <h3 class="text-main" style="color:#242424;">приложение на iPad</h3>
-                    </div>
-                </a>
-                <a href="{% url 'case2' %}" target="_blank" class="case-container" style="text-decoration-color: #242424;">
-                    <img src="{% static 'web/images/3.png' %}" alt="case1" class="case-image">
-                    <div class="case-name-container">
-                        <h3 class="case-title">студия бровей</h3>
-                        <h3 class="text-main" style="color:#242424;">веб-сервис</h3>
-                    </div>
-                </a>
-            </div>
-        </section>
-
         <section class="about" id="about">
             <div class="container">
-                
+                <h2 class="section-title">
+                    о нас
+                </h2>
                 <div class="about_grid">
                     <article class="feature" style="background: linear-gradient(135deg, #00a5ff, #0095ff); color: white;">
                         <h3 class="feature_header">
                             повышаем<br>выручку
                         </h3>
                         <p class="feature_text">
-                            с заказов в интернете и оффлайн
-                            за счёт экспертного опыта
-                            и свежего взгляда
+                            с заказов в интернете и оффлайн за счёт экспертного опыта и свежего взгляда
                         </p>
                     </article>
                     <article class="feature" style="background: linear-gradient(135deg, #363636, #232323); color: white;">
@@ -132,7 +105,7 @@
                             гарантируем<br>результат
                         </h3>
                         <p class="feature_text">
-                            30 дней тех. поддержки бесплатно, больше выгоды <span>с подпиской</span>
+                            30 дней тех. поддержки бесплатно, до 24 месяцев по подписке
                             <span style="text-decoration: underline;">wwwebcare+</span>
                         </p>
                     </article>
@@ -228,7 +201,7 @@
             <div class="container">
                 <div class="process-title">
                     <h2 class="section-title">процесс</h2>
-                    <p class="text-main">этапы могут отличаться в зависимости от сложности проекта</p>
+                    <p class="process-subtext">этапы могут отличаться в зависимости от сложности проекта</p>
                 </div>
                 <div class="process-steps">
                     <article class="step" style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
@@ -239,12 +212,12 @@
                                     цели
                                 </h3>
                                 <p class="step-description" style="color: white;">
-                                    после того как вы заполните бриф,
-                                    сразу определим цену и сроки
+                                    после того как вы заполните бриф,<br>
+                                    сразу определим цену и сроки<br>
                                     выполнения
                                 </p>
                             </div>
-                            <p class="text-main" style="color: white;">
+                            <p class="step-subtitle" style="color: white;">
                                 встреча
                             </p>
                         </div>
@@ -254,14 +227,14 @@
                             <div class="step-header">
                                 <h3 class="step-title">
                                     проведём<br>
-                                    исследование
+                                    анализ
                                 </h3>
                                 <p class="step-description">
-                                    вашего бизнеса и ниши, конкурентов,
+                                    вашего бизнеса и ниши, конкурентов,<br>
                                     определим целевую аудиторию
                                 </p>
                             </div>
-                            <p class="text-main">
+                            <p class="step-subtitle">
                                 этап 2
                             </p>
                         </div>
@@ -274,12 +247,12 @@
                                     структуру
                                 </h3>
                                 <p class="step-description">
-                                    проработав userflow под задачи
-                                    вашего бизнеса, определимся
+                                    проработав userflow под задачи<br>
+                                    вашего бизнеса, определимся<br>
                                     с набором интегрируемых сервисов
                                 </p>
                             </div>
-                            <p class="text-main">
+                            <p class="step-subtitle">
                                 этап 3
                             </p>
                         </div>
@@ -292,12 +265,12 @@
                                     концепцию
                                 </h3>
                                 <p class="step-description" style="color: white;">
-                                    на основе мудбордов и вашей
-                                    айдентики, подберём шрифты
+                                    на основе мудбордов и вашей<br>
+                                    айдентики, подберём шрифты<br>
                                     и визуальный стиль
                                 </p>
                             </div>
-                            <p class="text-main" style="color: white;">
+                            <p class="step-subtitle" style="color: white;">
                                 этап 4 - предоплата 50%
                             </p>
                         </div>
@@ -310,12 +283,12 @@
                                     код с нуля
                                 </h3>
                                 <p class="step-description">
-                                    без использования конструкторов
-                                    сайтов или шаблонных макетов,
+                                    без использования конструкторов<br>
+                                    сайтов или шаблонных макетов,<br>
                                     работа уникальна
                                 </p>
                             </div>
-                            <p class="text-main">
+                            <p class="step-subtitle">
                                 этап 5
                             </p>
                         </div>
@@ -328,12 +301,12 @@
                                     seo сайта
                                 </h3>
                                 <p class="step-description">
-                                    чтобы клиенты видели именно ваш
-                                   сайт в поисковых системах яндекс
+                                    чтобы клиенты видели именно ваш<br>
+                                   сайт в поисковых системах яндекс<br>
                                     и google
                                 </p>
                             </div>
-                            <p class="text-main">
+                            <p class="step-subtitle">
                                 этап 6
                             </p>
                         </div>
@@ -346,11 +319,12 @@
                                     и научим
                                 </h3>
                                 <p class="step-description" style="color: white;">
-                                    пользоваться админкой и любыми
-                                    подключёнными сервисами
+                                    пользоваться cms и подключёнными<br>
+                                    сервисами, а так же бесплатно<br>
+                                    поможем в течение месяца
                                 </p>
                             </div>
-                            <p class="text-main" style="color: white;">
+                            <p class="step-subtitle" style="color: white;">
                                 этап 7 - постоплата 50%
                             </p>
                         </div>
@@ -363,7 +337,7 @@
             <div class="container">
                 <div class="services-side">
                     <h2 class="section-title">услуги</h2>
-                    <div class="text-main">
+                    <div class="services-info">
                         <p class="services-item">
                             в цены входит базовая<br>
                             оптимизация сайта под поисковые <br>
@@ -385,7 +359,7 @@
                     <div class="services-tab">
                         <button class="services-button" id="sitesLink">сайты</button>
                         <button class="services-button" id="webcareLink">wwwebcare</button>
-                        <button class="services-button" id="extraLink">ещё</button>
+                        <button class="services-button" id="extraLink">дополнительно</button>
                     </div>
                     <div class="services-list">
                         <div class="sites-list tab-content" id="sites">
@@ -395,7 +369,7 @@
                                     <p class="service-price">от 20 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    одностраничный продающий сайт
+                                    одностраничный продающий сайт<br>
                                     с кнопкой купить или формой заявки
                                 </p>
                             </article>
@@ -405,7 +379,7 @@
                                     <p class="service-price" style="color: #242424;">от 100 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    сайт с каталогом любого размера, сервисом
+                                    сайт с каталогом любого размера, сервисом<br>
                                     онлайн оплаты и т. д.
                                     </p>
                             </article>
@@ -415,7 +389,7 @@
                                     <p class="service-price">от 50 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    лицо вашего бренда в интернете, формирующее
+                                    лицо вашего бренда в интернете, формирующее<br>
                                     имидж и общее впечатление от компании
                                 </p>
                             </article>
@@ -425,7 +399,7 @@
                                     <p class="service-price" style="color: #242424;">от 10 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    шаблонный простейший сайт за 3 дня, подойдёт
+                                    шаблонный простейший сайт за 3 дня, подойдёт<br>
                                     для одной услуги или временного предложения
                                 </p>
                             </article>
@@ -489,8 +463,8 @@
                                     <p class="service-price">от 40 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    проведём аудит вашего сайта, исследуем
-                                    рынок и предложим оптимальное решение
+                                    проведём аудит вашего сайта, исследование ниши и ца,<br>
+                                    и предложим решение для повышения конверсии
                                 </p>
                             </article>
                             <article class="service"style="background-color: white;">
@@ -499,7 +473,7 @@
                                     <p class="service-price" style="color: #242424;">от 20 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    проведём аудит seo вашего сайта и качественно
+                                    проведём аудит seo вашего сайта и качественно<br>
                                     поднимем его место в поисковых системах
                                 </p>
                             </article>
@@ -509,7 +483,7 @@
                                     <p class="service-price">от 20 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    разработаем, запустим и будем вести баннерную
+                                    разработаем, запустим и будем вести баннерную<br>
                                     рекламу в в яндексе, vk и пр.
                                     </p>
                             </article>
@@ -524,9 +498,9 @@
                 <div class="contacts-side">
                     <h2 class="section-title">оставьте заявку <br> или свяжитесь сами</h2>
                     <div class="contacts-info">
-                        <a class="contacts-item" href="https://t.me/arrowwwsales">tg @arrowwwsales</a>
-                        <a class="contacts-item"href="mailto:arrowwwsales@ya.ru">arrowwwsales@ya.ru</a>
-                        <a class="contacts-item" href="tel:+79990820811">+7 999 082 08 11</a>
+                        <p class="contacts-item">tg @arrowwwsales</p>
+                        <p class="contacts-item">sales@arrowww.ru</p>
+                        <p class="contacts-item">8 999 082 08 11</p>
                     </div>
                 </div>
                 <div class="contacts-main">
@@ -539,7 +513,7 @@
                             <input type="text" name="contact" placeholder="какую задачу хотите решить" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="message" placeholder="как с вами связаться" required>
+                            <input type="text" name="message" placeholder="telegram / whatsapp / email" required>
                         </div>
                         <div class="submit">
                             <div class="form-button">
@@ -549,7 +523,7 @@
                             <p class="form-policy">
                                 <span class="form-policy-text">
                                     нажимая на кнопку я согласен<br>
-                                    с <a href="{% url 'privacy' %}" target="_blank" class="form-policy-link" style="color: #242424;">политикой конфиденциальности</a>
+                                    с <a href="#" class="form-policy-link" style="color: #242424;">политикой конфиденциальности</a>
                                 </span>
                             </p>
                         </div>
@@ -562,12 +536,12 @@
     <footer class="footer" id="footer">
         <div class="container">
             <div class="location">
-                <span class="text-main">г. хабаровск</span>
+                <span class="location-text">г. хабаровск</span>
                 <img src="{% static 'web/images/footer-logo.svg'%}" alt="Arrowww" class="location-icon">
             </div>
             <div class="footer-info">
                 <img src="{% static 'web/images/logo.svg' %}" alt="" class="footer-logo">
-                <span class="text-main">
+                <span class="footer-text">
                     ARROWWW 2025<br>
                     все права сохранены
                 </span>
