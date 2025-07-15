@@ -1,11 +1,31 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Спасибо!</title>
+    <link rel="stylesheet" href="{% static 'web/css/thank-you.css' %}">
+    
+    <link rel="shortcut icon" href="{% static 'web/images/favicon.ico' %}" type="image/x-icon" />
 </head>
 <body>
-    <h1>Спасибо за обращение!</h1>
-    <p>Мы скоро свяжемся с вами.</p>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon"> <!-- Логотип, выведен за пределы синего фона -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="thank-you-container">
+            <div class="thank-you-box">
+                <h1 class="thank-you-title">Спасибо за обращение!</h1>
+                <p class="thank-you-text">Мы скоро свяжемся с вами.</p>
+            </div>
+            <a href="/" class="cta-button">На главную страницу</a> <!-- Кнопка под синим фоном -->
+        </div>
+    </main>
 </body>
 </html>
