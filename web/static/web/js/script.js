@@ -162,21 +162,24 @@ document.addEventListener("DOMContentLoaded", function() {
       };
   
     const initSmoothScroll = () => {
+      const navHeight = document.querySelector('nav').offsetHeight; // Получаем высоту меню
+
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (anchor.getAttribute('href') !== '#') {
-          anchor.addEventListener('click', function(e) {
+          anchor.addEventListener('click', function (e) {
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
               e.preventDefault();
-              target.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
+              window.scrollTo({
+                top: target.offsetTop - navHeight + 5, // Прокручиваем с учетом высоты меню
+                behavior: 'smooth'
               });
             }
           });
         }
       });
     };
+
   
     initHorizontalScroll();
     initTabs();
