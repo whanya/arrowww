@@ -54,6 +54,9 @@ def case1(request):
 def case2(request):
     return render(request, 'web/case2.html')
 
+def sitemap(request):
+    return render(request, 'web/sitemap.xml')
+
 
 def send_notifications(mailing_settings, data):
     """Функция для отправки всех уведомлений"""
