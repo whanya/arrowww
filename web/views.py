@@ -42,6 +42,18 @@ def index(request):
 def success(request):
     return render(request, 'web/success.html')
 
+def privacy(request):
+    return render(request, 'web/privacy.html')
+
+def case0(request):
+    return render(request, 'web/case0.html')
+
+def case1(request):
+    return render(request, 'web/case1.html')
+
+def case2(request):
+    return render(request, 'web/case2.html')
+
 
 def send_notifications(mailing_settings, data):
     """Функция для отправки всех уведомлений"""
