@@ -11,11 +11,27 @@
     <link rel="shortcut icon" href="{% static 'web/images/favicon.ico' %}" type="image/x-icon" />
 </head>
 <body>
-    <header class="header">
+   <header class="header desktop" id="header-desktop">
         <div class="container">
-            <div class="logo">
-                <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon"> <!-- Логотип, выведен за пределы синего фона -->
-            </div>
+            <a href="#" class="logo">
+                <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon">
+            </a>
+            <span>заявка отправлена</span>
+            <a href="https://arrowww.ru" class="cta-button">
+                <span class="text-main">на главную</span>
+                <img src="{% static 'web/images//logo_m_w.svg' %}" alt="Arrowww" class="cta-button-icon">
+            </a>
+        </div>
+    </header>
+
+   <header class="header mobile" id="header-mobile">
+        <div class="container">
+            <a class="logo-mobile" href="https://www.arrowww.ru" style="text-decoration:none; color:#242424">
+                <span>arrowww</span>
+            </a>
+            <a href="#contacts" class="cta-button-mobile">
+                <img src="{% static 'web/images/logo_m.svg' %}" alt="">
+            </a>
         </div>
     </header>
 
@@ -35,7 +51,7 @@
                         <img src="{% static 'web/images/logo_m.svg' %}" alt="Arrowww" class="hero-icon">
                     </div>
                     <p class="text-main">
-                        свяжемся с вами<br>
+                        мы свяжемся с вами<br>
                         <span style="color: #0095FF;">в ближайшее время</span>
                     </p>
                 </div>
