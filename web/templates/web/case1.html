@@ -12,20 +12,45 @@
 
 </head>
 <body>
-    <header class="header desktop" id="header-desktop">
+        <header class="header desktop" id="header-desktop">
         <div class="container">
-            <a href="/" class="logo">
+            <a href="#" class="logo">
                 <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon">
             </a>
-            <p class="hero-subtext">
+            <p class="text-main">
                 кейс / премиум клининг / лендинг
             </p>
             <a href="#contacts" class="cta-button">
-                <span class="cta-button-text">обсудить проект</span>
-                <img src="{% static 'web/images/logo_m_w.svg' %}" alt="Arrowww" class="cta-button-icon">
+                <span class="text-main">обсудить проект</span>
+                <img src="{% static 'web/images//logo_m_w.svg' %}" alt="Arrowww" class="cta-button-icon">
             </a>
         </div>
     </header>
+
+    <header class="header mobile" id="header-mobile">
+        <div class="container">
+            <a href="#" class="burger-menu" id="burgerButton">
+                <svg width="30" height="20" viewBox="0 0 30 20">
+                    <rect width="30" height="2" fill="#242424" class="top"></rect>
+                    <rect y="9" width="30" height="2" fill="#242424" class="middle"></rect>
+                    <rect y="18" width="30" height="2" fill="#242424" class="bottom"></rect>
+                  </svg>
+            </a>
+            <div class="burger-menu-content" id="burgerMenu">
+                <a href="#about">о нас</a>
+                <a href="#process">процесс</a>
+                <a href="#services">услуги</a>
+                <a href="#contacts">контакты</a>
+            </div>
+            <span class="logo-mobile">
+                arrowww
+            </span>
+            <a href="#" class="cta-button-mobile">
+                <img src="{% static 'web/images/logo_m.svg' %}" alt="">
+            </a>
+        </div>
+    </header>
+
     <main>
         <section class="case-images">
             <img src="{% static 'web/images/case1/1.png'%}" alt="Перезагрузите страницу или сбросьте кэш" class="case-img">
