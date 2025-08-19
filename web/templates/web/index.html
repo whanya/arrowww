@@ -13,17 +13,16 @@
     
     <link rel="canonical" href="https://arrowww.ru">
     <script src="{% static 'web/js/script.js' %}"></script>
-    <meta name="description" content="помогаем бизнесу расти создавая топовые сайты, приложения и чатботы. предоставляем передовой дизайн и отточенный опыт взаимодействия">
-    <meta name="keywords" content="веб-разработка, digital-агентство, создание сайтов, онлайн-продвижение, разработка решений, digital marketing, редизайн, дизайн, веб-дизайн">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="arrowww">
-    <title>arrowww / делаем сайты</title>
-    <!-- Открытые графические мета-теги -->
-    <meta property="og:title" content="arrowww / делаем сайты">
-    <meta property="og:description" content="помогаем бизнесу расти создавая топовые сайты, приложения и чатботы. предоставляем передовой дизайн и отточенный опыт взаимодействия">
-    <meta property="og:image" content="https://arrowww.ru/static/web/images/favicon.png">
-    <meta property="og:url" content="https://arrowww.ru">
-    <meta property="og:type" content="website">
+    <title>{{ meta_title|default:"ARROWWW" }}</title>
+    <meta name="description" content="{{ meta_description|default:'Веб-разработка и digital-решения' }}">
+    <meta name="keywords" content="{{ meta_keywords|default:'веб-разработка, digital-агентство' }}">
+    <meta name="robots" content="{{ meta_robots|default:'index, follow' }}">
+    <meta name="author" content="{{ meta_author|default:'ARROWWW' }}">
+
+    <meta property="og:title" content="{{ og_title|default:meta_title }}">
+    <meta property="og:description" content="{{ og_description|default:meta_description }}">
+    <meta property="og:url" content="{{ og_url|default:request.build_absolute_uri }}">
+    <meta property="og:image" content="{{ og_image|default:'https://arrowww.ru/static/images/og-default.jpg' }}">
 </head>
 
 <body>
