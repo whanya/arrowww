@@ -88,6 +88,14 @@ section {
   padding-bottom: 14vw;
 }
 
+section .services {
+  padding-bottom: 0vw;
+}
+
+section .contacts {
+  padding-top: 14vw;
+}
+
 main {
   margin-top: 7.4vw;
 }
