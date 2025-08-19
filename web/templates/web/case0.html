@@ -29,7 +29,7 @@
     </header> -->
         <header class="header desktop" id="header-desktop">
         <div class="container">
-            <a href="#" class="logo">
+            <a href="https://www.arrowww.ru" class="logo">
                 <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon">
             </a>
             <p class="text-main">
@@ -76,6 +76,44 @@
             <img src="{% static 'web/images/case0/6.png'%}" alt="Перезагрузите страницу или сбросьте кэш" class="case-img">
             <img src="{% static 'web/images/case0/7.png'%}" alt="Перезагрузите страницу или сбросьте кэш" class="case-img">
             <img src="{% static 'web/images/case0/8.png'%}" alt="Перезагрузите страницу или сбросьте кэш" class="case-img">
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts-side">
+                    <h2 class="section-title">оставьте заявку <br> или свяжитесь сами</h2>
+                    <div class="contacts-info">
+                        <a class="contacts-item" href="https://t.me/arrowwwsales">tg @arrowwwsales</a>
+                        <a class="contacts-item"href="mailto:arrowwwsales@ya.ru">arrowwwsales@ya.ru</a>
+                        <a class="contacts-item" href="tel:+79990820811">+7 999 082 08 11</a>
+                    </div>
+                </div>
+                <div class="contacts-main">
+                    <form method="post" class="contacts-form">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="имя или название компании" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="contact" placeholder="какую задачу хотите решить" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="message" placeholder="как с вами связаться" required>
+                        </div>
+                        <div class="submit">
+                            <div class="form-button">
+                                <button type="submit">свяжитесь со мной</button>
+                                <img src="{% static 'web/images/logo_m_w_l.svg' %}" alt="Arrowww" class = "button-icon">
+                            </div>
+                            <p class="form-policy">
+                                <span class="form-policy-text">
+                                    нажимая на кнопку я согласен<br>
+                                    с <a href="{% url 'privacy' %}" target="_blank" class="form-policy-link" style="color: #242424;">политикой конфиденциальности</a>
+                                </span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 </body>
