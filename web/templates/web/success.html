@@ -19,13 +19,27 @@
     </header>
 
     <main>
-        <div class="thank-you-container">
-            <div class="thank-you-box">
-                <h1 class="thank-you-title">Спасибо за обращение!</h1>
-                <p class="thank-you-text">Мы скоро свяжемся с вами.</p>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="location">
+                    <span class="text-main">г. хабаровск</span>
+                    <img src="{% static 'web/images/footer-logo.svg' %}" alt="Arrowww" class="location-icon">
+                </div>
+                <div class="hero-info">
+                    <div class="hero-title">
+                        <h1 class="hero-text">
+                            спасибо<br>
+                            за обращение
+                        </h1>
+                        <img src="{% static 'web/images/logo_m.svg' %}" alt="Arrowww" class="hero-icon">
+                    </div>
+                    <p class="text-main">
+                        свяжемся с вами<br>
+                        <span style="color: #0095FF;">в ближайшее время</span>
+                    </p>
+                </div>
             </div>
-            <a href="/" class="cta-button">На главную страницу</a> <!-- Кнопка под синим фоном -->
-        </div>
+        </section>
     </main>
 </body>
 </html>
