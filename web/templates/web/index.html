@@ -13,16 +13,17 @@
     
     <link rel="canonical" href="https://arrowww.ru">
     <script src="{% static 'web/js/script.js' %}"></script>
-    <title>{{ meta_title|default:"ARROWWW" }}</title>
-    <meta name="description" content="{{ meta_description|default:'Веб-разработка и digital-решения' }}">
-    <meta name="keywords" content="{{ meta_keywords|default:'веб-разработка, digital-агентство' }}">
-    <meta name="robots" content="{{ meta_robots|default:'index, follow' }}">
-    <meta name="author" content="{{ meta_author|default:'ARROWWW' }}">
-
-    <meta property="og:title" content="{{ og_title|default:meta_title }}">
-    <meta property="og:description" content="{{ og_description|default:meta_description }}">
-    <meta property="og:url" content="{{ og_url|default:request.build_absolute_uri }}">
-    <meta property="og:image" content="{{ og_image|default:'https://arrowww.ru/static/images/og-default.jpg' }}">
+    <meta name="description" content="помогаем бизнесу расти создавая топовые сайты, приложения и чатботы. предоставляем передовой дизайн и отточенный опыт взаимодействия">
+    <meta name="keywords" content="веб-разработка, digital-агентство, создание сайтов, онлайн-продвижение, разработка решений, digital marketing, редизайн, дизайн, веб-дизайн">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="arrowww">
+    <title>arrowww / делаем сайты</title>
+    <!-- Открытые графические мета-теги -->
+    <meta property="og:title" content="arrowww / делаем сайты">
+    <meta property="og:description" content="помогаем бизнесу расти создавая топовые сайты, приложения и чатботы. предоставляем передовой дизайн и отточенный опыт взаимодействия">
+    <meta property="og:image" content="https://arrowww.ru/static/web/images/favicon.png">
+    <meta property="og:url" content="https://arrowww.ru">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -338,8 +339,8 @@
                                     <p class="service-price" style="color: #242424;">от 200 000 Р</p>
                                 </div>
                                 <p class="service-description">
-                                    сайт с каталогом любого размера, сервисом
-                                    онлайн оплаты и т. д.
+                                    сайт с каталогом любого размера, корзиной
+                                    и оплатой онлайн
                                     </p>
                             </article>
                             <article class="service service-white"style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
@@ -377,7 +378,7 @@
                                         техническая поддержка
                                     </p>
                                     <p class="service-price">
-                                        от 5 000 Р / мес.
+                                        от 5 000 Р
                                     </p>
                                 </div>
                             </article>
@@ -388,12 +389,12 @@
                                     </h3>
                                     <p class="service-description">
                                         всё, что в start<br>
-                                        активное seo и наполнение<br>
-                                        сайта различным контентом,<br>
-                                        рекомендации для роста
+                                        активное seo и до 3-х статей<br>
+                                        до 3-х a/b-тестирований элементов<br>
+                                        аналитика до 2-х метрик
                                     </p>
                                     <p class="service-price">
-                                        от 20 000 Р / мес.
+                                        от 20 000 Р
                                     </p>
                                 </div>
                             </article>
@@ -404,13 +405,13 @@
                                     </h3>
                                     <p class="service-description">
                                         всё, что в wwwebcare<br>
-                                        абсолютная вовлечённость в сайт<br>
+                                        персональная маркетинг-стратегия<br>
                                         глубокая аналитика метрик<br>
                                         регулярные гипотезы и тесты<br>
                                         интеграция новых функций
                                     </p>
                                     <p class="service-price">
-                                        от 100 000 Р / мес.
+                                        от 80 000 Р
                                     </p>
                                 </div>
                             </article>
@@ -419,7 +420,7 @@
                             <article class="service service-white"style="background: linear-gradient(135deg, #00a5ff, #0095ff);">
                                 <div class="service-header">
                                     <h3 class="service-title">редизайн</h3>
-                                    <p class="service-price">от 30 000 Р</p>
+                                    <p class="service-price">от 40 000 Р</p>
                                 </div>
                                 <p class="service-description">
                                     проведём аудит вашего сайта, исследуем
@@ -496,13 +497,15 @@
         <div class="container">
             <div class="location">
                 <span class="text-main">г. хабаровск</span>
-                <img src="{% static 'web/images/footer-logo.svg'%}" alt="Arrowww" class="location-icon">
+                <a href="{% url 'about' %}">
+                    <img src="{% static 'web/images/footer-logo.svg'%}" alt="Arrowww" class="location-icon">
+                </a>
             </div>
             <div class="footer-info">
                 <img src="{% static 'web/images/logo.svg' %}" alt="" class="footer-logo">
                 <span class="text-main">
-                    © arrowww.ru, 2025. Все права защищены. <br>
-                    Иван Рудчук, самозанятый, ИНН 270392828106
+                    ARROWWW 2025<br>
+                    все права сохранены
                 </span>
             </div>
         </div>

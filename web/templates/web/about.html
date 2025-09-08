@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/adapt.css' %}">
+    <title>о нас / презентация / arrowww</title>
+
+
+</head>
+<body>
+        <header class="header desktop" id="header-desktop">
+        <div class="container">
+            <a href="https://www.arrowww.ru" class="logo">
+                <img src="{% static 'web/images/logo.svg' %}" alt="Arrowww logo" class="logo-icon">
+            </a>
+            <p class="text-main">
+                о нас / презентация
+            </p>
+            <a href="#contacts" class="cta-button">
+                <span class="text-main">обсудить проект</span>
+                <img src="{% static 'web/images//logo_m_w.svg' %}" alt="Arrowww" class="cta-button-icon">
+            </a>
+        </div>
+    </header>
+
+    <header class="header mobile" id="header-mobile">
+        <div class="container">
+            <a class="logo-mobile" href="https://www.arrowww.ru" style="text-decoration:none; color:#242424">
+                <span>arrowww</span>
+            </a>
+            <a href="#contacts" class="cta-button-mobile">
+                <img src="{% static 'web/images/logo_m.svg' %}" alt="">
+            </a>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <section class="case-images">
+            <img src="{% static 'web/images/about/1.png'%}" alt="Выключи VPN" class="case-img">
+            <img src="{% static 'web/images/about/2.png'%}" alt="Выключи VPN" class="case-img">
+            <img src="{% static 'web/images/about/3.png'%}" alt="Выключи VPN" class="case-img">
+            <img src="{% static 'web/images/about/4.png'%}" alt="Выключи VPN" class="case-img">
+            <img src="{% static 'web/images/about/5.png'%}" alt="Выключи VPN" class="case-img">
+            <img src="{% static 'web/images/about/6.png'%}" alt="Выключи VPN" class="case-img">
+            <img src="{% static 'web/images/about/7.png'%}" alt="Выключи VPN" class="case-img">
+            <img src="{% static 'web/images/about/8.png'%}" alt="Выключи VPN" class="case-img">
+        </section>
+        <section class="contacts" id="contacts" style="padding-top: 14vw;">
+            <div class="container">
+                <div class="contacts-side">
+                    <h2 class="section-title">оставьте заявку <br> или свяжитесь сами</h2>
+                    <div class="contacts-info">
+                        <a class="contacts-item" href="https://t.me/arrowwwsales">tg @arrowwwsales</a>
+                        <a class="contacts-item"href="mailto:arrowwwsales@ya.ru">arrowwwsales@ya.ru</a>
+                        <a class="contacts-item" href="tel:+79990820811">+7 999 082 08 11</a>
+                    </div>
+                </div>
+                <div class="contacts-main">
+                    <form method="post" class="contacts-form" action="{% url 'index' %}">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="имя или название компании" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="contact" placeholder="какую задачу хотите решить" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="message" placeholder="как с вами связаться" required>
+                        </div>
+                        <div class="submit">
+                            <div class="form-button">
+                                <button type="submit">свяжитесь со мной</button>
+                                <img src="{% static 'web/images/logo_m_w_l.svg' %}" alt="Arrowww" class = "button-icon">
+                            </div>
+                            <p class="form-policy">
+                                <span class="form-policy-text">
+                                    нажимая на кнопку я согласен<br>
+                                    с <a href="{% url 'privacy' %}" target="_blank" class="form-policy-link" style="color: #242424;">политикой конфиденциальности</a>
+                                </span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
