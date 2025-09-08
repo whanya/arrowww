@@ -26,6 +26,7 @@ urlpatterns = [
     path('case0/', views.case0, name='case0'),
     path('case1/', views.case1, name='case1'),
     path('case2/', views.case2, name='case2'),
+    path('about/', views.about, name='about'),
     path('sitemap/', views.sitemap, name='sitemap'),
 ]
 
